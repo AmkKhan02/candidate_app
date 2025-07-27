@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { useState, useMemo } from "react";
+// 1. Import useEffect
+import { useState, useMemo, useEffect } from "react";
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { Checkbox } from "./components/ui/checkbox";
@@ -139,45 +140,7 @@ const COLUMNS = [
   { key: 'notes', label: 'Notes', type: 'text' as const },
 ];
 
-// Sample data
-const SAMPLE_DATA: DataRow[] = [
-    {
-        id: '1',
-        name: 'John Doe',
-        email: 'john@example.com',
-        phone: '123-456-7890',
-        location: 'New York, NY',
-        submittedAt: '2024-07-26',
-        workAvailability: 'Full-time',
-        annualSalaryExpectation: 80000,
-        workExperience: '5 years',
-        education: "Bachelor's Degree",
-        skills: ['React', 'TypeScript', 'Node.js', 'GraphQL', 'SQL', 'Docker'],
-        status: 'New',
-        starred: true,
-        notes: 'Strong candidate with relevant experience in our tech stack.',
-        rating: 4,
-        rank: 1,
-    },
-    {
-        id: '2',
-        name: 'Jane Smith',
-        email: 'jane@example.com',
-        phone: '098-765-4321',
-        location: 'San Francisco, CA',
-        submittedAt: '2024-07-25',
-        workAvailability: 'Part-time',
-        annualSalaryExpectation: 65000,
-        workExperience: '3 years',
-        education: "Master's Degree",
-        skills: ['Vue.js', 'JavaScript', 'CSS', 'HTML5', 'Sass'],
-        status: 'Reviewed',
-        starred: false,
-        notes: '',
-        rating: 3,
-        rank: 2,
-    },
-];
+// 2. Sample data is removed. It will be fetched instead.
 
 // Filter logic
 function applyFilter(data: DataRow[], condition: FilterCondition): DataRow[] {
@@ -330,7 +293,8 @@ function CandidateDetailView({ candidate, onUpdate }: { candidate: DataRow; onUp
 
 // Main Component
 function SpreadsheetApp() {
-  const [data, setData] = useState<DataRow[]>(SAMPLE_DATA);
+  // 3. Initialize data state with an empty array
+  const [data, setData] = useState<DataRow[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [showStarred, setShowStarred] = useState(false);
   const [filters, setFilters] = useState<FilterCondition[]>([]);
@@ -338,6 +302,47 @@ function SpreadsheetApp() {
   const [sortConfig, setSortConfig] = useState<{ key: keyof DataRow; direction: 'ascending' | 'descending' } | null>({ key: 'submittedAt', direction: 'descending' });
   const [activeCandidate, setActiveCandidate] = useState<DataRow | null>(null);
   const [editingCell, setEditingCell] = useState<{ rowId: string; columnKey: string } | null>(null);
+
+  // 4. Add data fetching and transformation logic
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/form-submissions2.json');
+        const jsonData = await response.json();
+
+        const transformedData: DataRow[] = jsonData.map((item: any, index: number) => {
+          const salaryString = item.annual_salary_expectation?.['full-time']?.replace(/[^0-9.-]+/g, "") || '0';
+          const salary = parseInt(salaryString, 10);
+          
+          return {
+            id: `${item.name.replace(/\s+/g, '-')}-${index}`, // Create a more robust unique ID
+            name: item.name || 'N/A',
+            email: item.email || '',
+            phone: item.phone || '',
+            location: item.location || '',
+            submittedAt: item.submitted_at ? new Date(item.submitted_at).toISOString().split('T')[0] : new Date().toISOString().split('T')[0],
+            workAvailability: item.work_availability?.includes('full-time') ? 'Full-time' : 'Part-time',
+            annualSalaryExpectation: isNaN(salary) ? 0 : salary,
+            workExperience: item.work_experiences?.map((exp: any) => `${exp.roleName} at ${exp.company}`).join('; ') || 'N/A',
+            education: item.education?.highest_level || 'N/A',
+            skills: item.skills || [],
+            status: 'New',
+            starred: false,
+            notes: '',
+            rating: 0,
+            rank: index + 1,
+          };
+        });
+        
+        setData(transformedData);
+      } catch (error) {
+        console.error("Failed to fetch or process form submission data:", error);
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array means this runs once on mount
+
 
   const displayedCandidate = activeCandidate ? data.find(c => c.id === activeCandidate.id) : null;
 
@@ -417,7 +422,7 @@ function SpreadsheetApp() {
       rating: 0,
       rank: Math.max(...data.map(r => r.rank), 0) + 1,
     };
-    setData([...data, newCandidate]);
+    setData([newCandidate, ...data]); // Add new candidate to the top
     setActiveCandidate(newCandidate);
   };
 
@@ -444,7 +449,7 @@ function SpreadsheetApp() {
         if (Array.isArray(value)) {
           return `"${value.join(', ')}"`;
         }
-        return `"${value}"`;
+        return `"${String(value).replace(/"/g, '""')}"`; // Handle quotes in data
       }).join(',')
     );
     const csvContent = [headers, ...rows].join('\n');
@@ -527,7 +532,7 @@ function SpreadsheetApp() {
         <Table>
           <TableHeader className="bg-muted/50">
             <TableRow>
-              <TableHead className="w-12 text-center"><Checkbox checked={selectedRows.size > 0 && selectedRows.size === sortedData.length} onCheckedChange={toggleAllRows} /></TableHead>
+              <TableHead className="w-12 text-center"><Checkbox checked={selectedRows.size > 0 && selectedRows.size === sortedData.length && sortedData.length > 0} onCheckedChange={toggleAllRows} /></TableHead>
               {COLUMNS.map(col => (
                 <TableHead key={col.key} onClick={() => requestSort(col.key as keyof DataRow)} className="cursor-pointer hover:bg-muted transition-colors">
                   <div className="flex items-center gap-2 font-semibold text-foreground">
@@ -736,7 +741,7 @@ function SpreadsheetApp() {
       {sortedData.length === 0 && (
         <div className="text-center py-16">
           <p className="text-lg text-muted-foreground">No candidates match your criteria.</p>
-          <Button variant="outline" onClick={() => { setSearchQuery(''); setFilters([]); }} className="mt-4">Clear all filters</Button>
+          <Button variant="outline" onClick={() => { setSearchQuery(''); setFilters([]); setShowStarred(false); }} className="mt-4">Clear all filters</Button>
         </div>
       )}
 
@@ -749,7 +754,7 @@ function SpreadsheetApp() {
                 <SheetDescription>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span>{displayedCandidate.workAvailability}</span>
-                    <span className="text-xs">&bull;</span>
+                    <span className="text-xs">•</span>
                     <span>Applied on {new Date(displayedCandidate.submittedAt).toLocaleDateString()}</span>
                   </div>
                 </SheetDescription>

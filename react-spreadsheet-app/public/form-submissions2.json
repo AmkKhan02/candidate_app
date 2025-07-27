@@ -1,0 +1,791 @@
+[
+    {
+      "name": "Clever Monkey",
+      "email": "clever-monkey@example.com",
+      "phone": "5582981474204",
+      "location": "Maceió",
+      "submitted_at": "2025-01-28 09:02:16.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$117548"
+      },
+      "work_experiences": [
+        {
+          "company": "StarLab Digital Ventures",
+          "roleName": "Full Stack Developer"
+        },
+        {
+          "company": "OrbitalLife",
+          "roleName": "Project Manager"
+        },
+        {
+          "company": "Carrot Hosting",
+          "roleName": "Full Stack Developer"
+        },
+        {
+          "company": "Bitbay Solutions",
+          "roleName": "Full Stack Developer"
+        },
+        {
+          "company": "Federal Institute of Science, Education & Technology - Alagoas",
+          "roleName": "Project Manager"
+        },
+        {
+          "company": "Usina Caeté",
+          "roleName": "Scientist"
+        },
+        {
+          "company": "Cyberia",
+          "roleName": "System Administrator"
+        }
+      ],
+      "education": {
+        "highest_level": "Bachelor's Degree",
+        "degrees": [
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Computer Science",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2023",
+            "endDate": "2027",
+            "originalSchool": "Faculdade Descomplica",
+            "isTop50": false
+          },
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Law",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2015",
+            "endDate": "2023",
+            "originalSchool": "Federal University of Alagoas",
+            "isTop50": false
+          },
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Chemistry",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2011",
+            "endDate": "2014",
+            "originalSchool": "Federal Institute of Alagoas",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": [
+        "Data Analysis",
+        "Docker",
+        "Microservices"
+      ]
+    },
+    {
+      "name": "Noble Flamingo",
+      "email": "noble-flamingo@example.com",
+      "phone": "12156688210",
+      "location": "Philadelphia",
+      "submitted_at": "2025-01-26 07:40:39.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$112253"
+      },
+      "work_experiences": [
+        {
+          "company": "Intellectual Asset Management Group",
+          "roleName": "Managing Director"
+        },
+        {
+          "company": "Raju LLP",
+          "roleName": "Partner"
+        },
+        {
+          "company": "Angeion Group",
+          "roleName": "Legal Specialist"
+        },
+        {
+          "company": "Unilog Corporation",
+          "roleName": "Legal Specialist"
+        },
+        {
+          "company": "Spruce Law",
+          "roleName": "Legal Specialist"
+        },
+        {
+          "company": "Newport IP",
+          "roleName": "Legal Specialist"
+        },
+        {
+          "company": "Knox Investment Group",
+          "roleName": "Managing Director"
+        },
+        {
+          "company": "Drinker Biddle & Reath",
+          "roleName": "Attorney"
+        }
+      ],
+      "education": {
+        "highest_level": "Juris Doctor (J.D)",
+        "degrees": [
+          {
+            "degree": "Master's Degree",
+            "subject": "Accounting",
+            "school": "Top Schools",
+            "gpa": "GPA 3.5-3.9",
+            "startDate": "2005",
+            "endDate": "2006",
+            "originalSchool": "The Wharton School",
+            "isTop50": true
+          },
+          {
+            "degree": "Juris Doctor (J.D)",
+            "subject": "",
+            "school": "Top Private Universities",
+            "gpa": "GPA 3.5-3.9",
+            "startDate": "",
+            "endDate": "1999",
+            "originalSchool": "Pepperdine University School of Law",
+            "isTop50": false
+          },
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Electrical Engineering",
+            "school": "Top Schools",
+            "gpa": "GPA 3.5-3.9",
+            "startDate": "",
+            "endDate": "1995",
+            "originalSchool": "University of Pennsylvania",
+            "isTop50": true,
+            "isTop25": true
+          }
+        ]
+      },
+      "skills": []
+    },
+    {
+      "name": "Noble Antelope",
+      "email": "noble-antelope@example.com",
+      "phone": "8801993762548",
+      "location": "Bangladesh",
+      "submitted_at": "2025-01-28 07:29:47.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$63556"
+      },
+      "work_experiences": [
+        {
+          "company": "Red.Digital",
+          "roleName": "Software Engineer"
+        },
+        {
+          "company": "Robi-HRIS SaaS Product",
+          "roleName": "Software Engineer"
+        },
+        {
+          "company": "Dotlines",
+          "roleName": "Software Engineer"
+        },
+        {
+          "company": "BJIT Group",
+          "roleName": "Software Engineer"
+        }
+      ],
+      "education": {
+        "highest_level": "Bachelor's Degree",
+        "degrees": [
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Computer Science",
+            "school": "International Institutions",
+            "gpa": "GPA 3.5-3.9",
+            "startDate": "2016",
+            "endDate": "2021",
+            "originalSchool": "Chittagong University of Engineering & Technology",
+            "isTop50": false
+          },
+          {
+            "degree": "High School Diploma",
+            "subject": "",
+            "school": "State Universities",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2013",
+            "endDate": "2015",
+            "originalSchool": "Govt Hazi Mohammed Mohsin College",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": [
+        "Laravel",
+        "Next JS",
+        "React",
+        "React Native",
+        "Redux",
+        "Angular"
+      ]
+    },
+    {
+      "name": "Unique Platypus",
+      "email": "unique-platypus@example.com",
+      "phone": "55118120974",
+      "location": "Brazil",
+      "submitted_at": "2025-01-28 23:29:29.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$143487"
+      },
+      "work_experiences": [
+        {
+          "company": "Autônomo",
+          "roleName": "Backend Engineer"
+        },
+        {
+          "company": "CI&T",
+          "roleName": "Software Engineer"
+        },
+        {
+          "company": "CIOESTE",
+          "roleName": "Project Manager"
+        }
+      ],
+      "education": {
+        "highest_level": "Bachelor's Degree",
+        "degrees": [
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Information Technology",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2019",
+            "endDate": "2022",
+            "originalSchool": "FAM",
+            "isTop50": false
+          },
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Finance",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2010",
+            "endDate": "2011",
+            "originalSchool": "Centro Universitário Nove de Julho",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": [
+        "Amazon Web Services",
+        "Python",
+        "Flask",
+        "Agile",
+        "REST APIs"
+      ]
+    },
+    {
+      "name": "Clever Jellyfish",
+      "email": "clever-jellyfish@example.com",
+      "phone": "54169018596",
+      "location": "Argentina",
+      "submitted_at": "2025-01-29 03:45:30.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$120152"
+      },
+      "work_experiences": [
+        {
+          "company": "Ituran de Argentina",
+          "roleName": "Product Manager"
+        },
+        {
+          "company": "Ministerio de Educación de la Ciudad",
+          "roleName": "Tutor"
+        },
+        {
+          "company": "ThernLoven",
+          "roleName": "Software Developer"
+        },
+        {
+          "company": "Coder Hause",
+          "roleName": "Software Developer"
+        }
+      ],
+      "education": {
+        "highest_level": "Bachelor's Degree",
+        "degrees": [
+          {
+            "degree": "Associate's Degree",
+            "subject": "",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2010",
+            "endDate": "2015",
+            "originalSchool": "Escuela Técnica N°28 'Republica Francesa'",
+            "isTop50": false
+          },
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2023",
+            "endDate": "Present",
+            "originalSchool": "Universidad Siglo XXI",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": [
+        "JavaScript",
+        "Arduino",
+        "Amazon Web Services",
+        "Azure",
+        "Java",
+        "Google Cloud Platform"
+      ]
+    },
+    {
+      "name": "Joyful Yak",
+      "email": "joyful-yak@example.com",
+      "phone": "5548991101850",
+      "location": "Laguna",
+      "submitted_at": "2025-01-28 11:27:38.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$123210"
+      },
+      "work_experiences": [
+        {
+          "company": "Farfetch",
+          "roleName": "Engineering Manager"
+        },
+        {
+          "company": "XpandIT",
+          "roleName": "Lead Software Engineer"
+        },
+        {
+          "company": "WSO2",
+          "roleName": "Consultant"
+        },
+        {
+          "company": "FIESC",
+          "roleName": "Software Architect"
+        },
+        {
+          "company": "SENAI/SC",
+          "roleName": "Java Developer"
+        },
+        {
+          "company": "Trier Sistemas",
+          "roleName": "Java Developer"
+        }
+      ],
+      "education": {
+        "highest_level": "Bachelor's Degree",
+        "degrees": [
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Information Technology",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2009",
+            "endDate": "2014",
+            "originalSchool": "Universidade do Sul de Santa Catarina",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": [
+        "Redis",
+        "MongoDB",
+        "C#",
+        "Docker",
+        "Java"
+      ]
+    },
+    {
+      "name": "Intelligent",
+      "email": "intelligent-xenops@example.com",
+      "phone": "573014908679",
+      "location": "Manizales",
+      "submitted_at": "2025-01-26 11:37:41.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$74610"
+      },
+      "work_experiences": [],
+      "education": {
+        "highest_level": "Master's Degree",
+        "degrees": [
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Business Administration and Management",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "",
+            "endDate": "",
+            "originalSchool": "Universidad Nacional de Colombia",
+            "isTop50": false
+          },
+          {
+            "degree": "Master's Degree",
+            "subject": "Economics",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "",
+            "endDate": "",
+            "originalSchool": "Universidad de Manizales",
+            "isTop50": false
+          },
+          {
+            "degree": "Master's Degree",
+            "subject": "Statistics",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "",
+            "endDate": "",
+            "originalSchool": "Universidad Nacional de Colombia",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": []
+    },
+    {
+      "name": "Hilarious Narwhal",
+      "email": "hilarious-narwhal@example.com",
+      "phone": "447776689124",
+      "location": "UK",
+      "submitted_at": "2025-01-28 00:45:00.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$45939"
+      },
+      "work_experiences": [
+        {
+          "company": "Unschool",
+          "roleName": "Software Developer Intern"
+        }
+      ],
+      "education": {
+        "highest_level": "Master's Degree",
+        "degrees": [
+          {
+            "degree": "Master's Degree",
+            "subject": "Data Science",
+            "school": "International Institutions",
+            "gpa": "GPA 3.5-3.9",
+            "startDate": "",
+            "endDate": "2023",
+            "originalSchool": "Aston University",
+            "isTop50": false
+          },
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Electrical Engineering",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "",
+            "endDate": "2021",
+            "originalSchool": "Gokarajau Rangaraju Institute of Engineering and Technology",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": [
+        "Excel",
+        "Machine Learning",
+        "Python"
+      ]
+    },
+    {
+      "name": "Enthusiastic Tiger",
+      "email": "enthusiastic-tiger@example.com",
+      "phone": "58214140963859",
+      "location": "Maracay",
+      "submitted_at": "2025-01-26 16:47:36.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$100445"
+      },
+      "work_experiences": [
+        {
+          "company": "Tunabear",
+          "roleName": "Financial Analyst"
+        },
+        {
+          "company": "Freelance",
+          "roleName": "IT Support Specialist"
+        },
+        {
+          "company": "Net A Porter",
+          "roleName": "Customer Support"
+        },
+        {
+          "company": "Placetorent",
+          "roleName": "Marketing Specialist"
+        },
+        {
+          "company": "Outsource.Sa",
+          "roleName": "IT Support Specialist"
+        },
+        {
+          "company": "Riviera Electronic",
+          "roleName": "Customer Support"
+        },
+        {
+          "company": "Diocesis of Ciudad Guayana",
+          "roleName": "IT Support Specialist"
+        },
+        {
+          "company": "Caroni Bank",
+          "roleName": "Systems Engineer"
+        }
+      ],
+      "education": {
+        "highest_level": "Bachelor's Degree",
+        "degrees": [
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Industrial Engineering",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2014",
+            "endDate": "In progress",
+            "originalSchool": "Santiago Mariño Institute",
+            "isTop50": false
+          },
+          {
+            "degree": "Associate's Degree",
+            "subject": "Information Technology",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2003",
+            "endDate": "2007",
+            "originalSchool": "Rodolfo Loero Arismendi",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": [
+        "Investing"
+      ]
+    },
+    {
+      "name": "Brave Tiger",
+      "email": "brave-tiger@example.com",
+      "phone": "8801687874697",
+      "location": "Bangladesh",
+      "submitted_at": "2025-01-26 17:29:23.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$68973"
+      },
+      "work_experiences": [
+        {
+          "company": "Repliq Limited",
+          "roleName": "Frontend Engineer"
+        },
+        {
+          "company": "DS Legends Pte. Ltd.",
+          "roleName": "Full Stack Developer"
+        },
+        {
+          "company": "Digital Planet London",
+          "roleName": "Web Developer"
+        }
+      ],
+      "education": {
+        "highest_level": "Associate's Degree",
+        "degrees": [
+          {
+            "degree": "Associate's Degree",
+            "subject": "Civil Engineering",
+            "school": "State Universities",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "",
+            "endDate": "2016",
+            "originalSchool": "Dhaka Polytechnic Institute",
+            "isTop50": false
+          },
+          {
+            "degree": "High School Diploma",
+            "subject": "",
+            "school": "State Universities",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "",
+            "endDate": "2011",
+            "originalSchool": "Civil Aviation High School",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": [
+        "Redux",
+        "MongoDB",
+        "React",
+        "Express",
+        "TailwindCSS",
+        "Next JS",
+        "Node JS",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Noble",
+      "email": "noble-iguana@example.com",
+      "phone": "18763468685",
+      "location": "Kingston",
+      "submitted_at": "2025-01-27 08:43:09.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$105801"
+      },
+      "work_experiences": [
+        {
+          "company": "JN Bank",
+          "roleName": "Financial Analyst"
+        },
+        {
+          "company": "Bank of Jamaica",
+          "roleName": "Financial Analyst"
+        }
+      ],
+      "education": {
+        "highest_level": "Master's Degree",
+        "degrees": [
+          {
+            "degree": "Master's Degree",
+            "subject": "Finance",
+            "school": "International Institutions",
+            "gpa": "GPA 3.5-3.9",
+            "startDate": "2019",
+            "endDate": "2021",
+            "originalSchool": "Mona School of Business & Management",
+            "isTop50": false
+          },
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Finance",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2008",
+            "endDate": "2011",
+            "originalSchool": "The University of the West Indies",
+            "isTop50": false
+          },
+          {
+            "degree": "High School Diploma",
+            "subject": "",
+            "school": "State Universities",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2001",
+            "endDate": "2008",
+            "originalSchool": "Calabar High School",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": []
+    },
+    {
+      "name": "Clever Raccoon",
+      "email": "clever-raccoon@example.com",
+      "phone": "34692467888",
+      "location": "Spain",
+      "submitted_at": "2025-01-27 15:52:48.000000",
+      "work_availability": [
+        "full-time",
+        "part-time"
+      ],
+      "annual_salary_expectation": {
+        "full-time": "$126180"
+      },
+      "work_experiences": [
+        {
+          "company": "Safeguard Global",
+          "roleName": "Full Stack Developer"
+        },
+        {
+          "company": "Solera",
+          "roleName": "Frontend Engineer"
+        },
+        {
+          "company": "everis",
+          "roleName": "Frontend Engineer"
+        },
+        {
+          "company": "Quintas Energy",
+          "roleName": "UX/UI Designer"
+        }
+      ],
+      "education": {
+        "highest_level": "Master's Degree",
+        "degrees": [
+          {
+            "degree": "Master's Degree",
+            "subject": "Architecture",
+            "school": "International Institutions",
+            "gpa": "GPA 3.5-3.9",
+            "startDate": "",
+            "endDate": "2019",
+            "originalSchool": "University of Seville",
+            "isTop50": false
+          },
+          {
+            "degree": "Bachelor's Degree",
+            "subject": "Architecture",
+            "school": "International Institutions",
+            "gpa": "GPA 3.0-3.4",
+            "startDate": "2010",
+            "endDate": "2014",
+            "originalSchool": "Ibero-American University",
+            "isTop50": false
+          }
+        ]
+      },
+      "skills": [
+        "Amazon Web Services",
+        "Java",
+        "Photoshop",
+        "Illustrator",
+        "JavaScript",
+        "React",
+        "TypeScript",
+        "UI/UX Design",
+        "REST APIs"
+      ]
+    }
+  ]
